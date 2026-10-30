@@ -1,0 +1,17 @@
+# secrets / local leftovers (do not commit)
+config.json
+.akcdn_session.json
+.akcdn_session.json.tmp
+.env
+.env.*
+!.env.example
+*.pem
+
+# tooling leftovers
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+.DS_Store

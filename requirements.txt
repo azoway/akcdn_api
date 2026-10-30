@@ -1,0 +1,4 @@
+requests>=2.28.0,<3
+
+# dev only (离线单测): pytest -q
+pytest>=7.4

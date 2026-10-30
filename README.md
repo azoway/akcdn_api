@@ -184,7 +184,7 @@ curl -s -X POST http://127.0.0.1:8787/v1/rules \
 
 ```ini
 [task_local]
-event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/main/examples/quanx_akcdn_whitelist.js, tag=AKCDN白名单, img-url=globe.system, enabled=true, argument=token=YOUR_TOKEN&host=203.0.113.10&port=12345
+event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/master/examples/quanx_akcdn_whitelist.js, tag=AKCDN白名单, img-url=globe.system, enabled=true, argument=token=YOUR_TOKEN&host=203.0.113.10&port=12345
 ```
 
 参数写在 `argument=` 里，用 `&` 连接（别写成脚本 URL 的 `?argument=`，那样 `$argument` 是空的）。多个转发目标用 `targets`，逗号写成 `%2C`：

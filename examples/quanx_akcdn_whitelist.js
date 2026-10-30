@@ -5,14 +5,14 @@ AKCDN：把白名单 IP 写成一条转发规则。
 这是手动任务：event-interaction 不会按时间自动跑。
 
 [task_local]
-event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/main/examples/quanx_akcdn_whitelist.js, tag=AKCDN白名单, img-url=globe.system, enabled=true, argument=token=YOUR_TOKEN&host=203.0.113.10&port=12345
+event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/master/examples/quanx_akcdn_whitelist.js, tag=AKCDN白名单, img-url=globe.system, enabled=true, argument=token=YOUR_TOKEN&host=203.0.113.10&port=12345
 
 参数写在逗号后面的 argument= 里，用 & 连接。不要写进脚本 URL 的 ?argument=，那样 $argument 是空的。
 英文逗号用来分隔 tag、img-url、enabled、argument。参数值里的逗号写成 %2C，例如多个转发目标：
 argument=token=YOUR_TOKEN&targets=203.0.113.10:12345%2C203.0.113.10:443:2
 
 和现有任务一样，也可以把参数放在脚本链接的 # 后面。同一项两边都写时，以 argument= 为准：
-event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/main/examples/quanx_akcdn_whitelist.js#token=YOUR_TOKEN&host=203.0.113.10&port=12345, tag=AKCDN, img-url=globe.system, enabled=false
+event-interaction https://raw.githubusercontent.com/azoway/akcdn_api/master/examples/quanx_akcdn_whitelist.js#token=YOUR_TOKEN&host=203.0.113.10&port=12345, tag=AKCDN, img-url=globe.system, enabled=false
 
 链接用仓库 raw 地址。也可把脚本文件内容本地托管后改 URL。
 

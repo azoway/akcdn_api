@@ -1,6 +1,6 @@
 # AKCDN 白名单
 
-Quantumult X 手动任务。读取本机公网 IPv4，调用 [AKCDN 开放接口](https://cdn.akile.ai/console/api-keys)，替换一条已有转发规则的入口白名单。
+Quantumult X 手动任务。读取本机公网 IPv4，调用 [AKCDN 开放接口](https://cdn.akile.ai/?ref=48521618)，替换一条已有转发规则的入口白名单。
 
 转发规则在控制台创建和修改。这个任务只改白名单。
 
